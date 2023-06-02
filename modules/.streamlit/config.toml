@@ -1,0 +1,10 @@
+[theme]
+base = "light"
+primaryColor = "#336699"  # Dark blue
+backgroundColor = "#F6F6F6"  # Light gray
+secondaryBackgroundColor = "#FFFFFF"  # White
+textColor = "#333333"  # Dark gray
+font = "Calibri, Candara, Arial, sans-serif"
+
+[server]
+maxUploadSize=100
