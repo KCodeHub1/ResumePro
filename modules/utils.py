@@ -4,7 +4,6 @@ import streamlit as st
 import requests
 import json
 import pdfplumber
-from config import apikey
 from modules.chatbot import Chatbot
 from modules.embedder import Embedder
 import openai
@@ -122,6 +121,8 @@ class Utilities:
         res = pycountry.countries.get(name=country)
         if res is not None:
             country_code = res.alpha_2
+        else:
+            country_code = 'IN'
         # get jobs data
         API_URL = "https://jobsapi-wp.firebrickgroup.com/JavaStaggingApi/?keyword="+job_title+"&zipcode=&city_job=&state_job=&radius=75&start=0&offset=100&domain=&ipaddress=139.99.148.8&country="+country_code+"&exportPartner=JobRapido_AU_Dir&isCountryMismatch=False&skipMinCpcRule=False&similar_job=true"
         jobs_list = []

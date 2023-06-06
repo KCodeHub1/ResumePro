@@ -3,6 +3,10 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+#env
+dev-env/
+modules\__pycache__
+
 #Remove Embeddings
 embeddings/
 # C extensions

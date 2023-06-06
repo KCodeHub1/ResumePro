@@ -7,7 +7,6 @@ from modules.history import ChatHistory
 from modules.layout import Layout
 from modules.utils import Utilities
 from modules.sidebar import Sidebar
-from config import apikey
 
 #To be able to update the changes made to modules in localhost (press r)
 def reload_module(module_name):
